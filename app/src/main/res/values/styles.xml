@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyDenseOutlined" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/main</item>
+        <item name="colorControlNormal">@color/gray200</item>
+        <item name="android:textCursorDrawable">@color/main</item>
+        <item name="materialThemeOverlay">@style/MyThemeOverlayOutlinedDense</item>
+    </style>
+
+    <style name="MyThemeOverlayOutlinedDense">
+        <item name="editTextStyle">@style/MyTextInputEditText_outlinedBox_dense_h</item>
+    </style>
+
+    <style name="MyTextInputEditText_outlinedBox_dense_h" parent="@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox.Dense">
+        <item name="android:paddingTop">9dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize10d" parent="">
+        <item name="cornerSize">10dp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize50p" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

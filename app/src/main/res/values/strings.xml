@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AidGo</string>
+    <string name="btn_login">계정이 있으신가요? <u>로그인</u></string>
+    <string name="btn_signup">계정이 없으신가요? <u>회원가입</u></string>
+    <string name="content">학교의 교내 또는 학교와 연계된 외부기관에서일을 하고,그 대가로 장학금의 형식으로 지원받는 돈을 <font color="#FF3D8AFF">국가근로장학금</font>이라 합니다!</string>
+</resources>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="22dp"
+                android:background="@color/transparent"
+                app:srcCompat="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/nsbold"
+                android:text="23년 1학기 국가 근로 장학금"
+                android:textColor="@color/gray900"
+                android:textSize="24sp" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="10dp"
+                android:background="#FF727272" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/nsmedium"
+                android:text="사업 기간 : 20323.03.01 ~ 2023.08.31"
+                android:textColor="#FF737373"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/nsmedium"
+                android:text="지원 금액 : 5,000,000원 (오백만원)"
+                android:textColor="#FF737373"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/nsmedium"
+                android:text="지원 대상 : 마이스터고 재학생"
+                android:textColor="#FF737373"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/expendButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_gray"
+                android:drawableEnd="@drawable/ic_open"
+                android:fontFamily="@font/nssemibold"
+                android:gravity="start|center"
+                android:padding="10dp"
+                android:text="국가 근로 장학금이 뭔가요?"
+                android:textColor="#FF5C5C5C"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="12dp"
+                android:text="@string/content"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/expend2Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_radius_gray"
+                android:backgroundTint="@color/gray300"
+                android:drawableRight="@drawable/ic_open"
+                android:fontFamily="@font/nssemibold"
+                android:gravity="start|center"
+                android:padding="10dp"
+                android:text="신청 대상 (지원 자격)"
+                android:textColor="#FF5C5C5C"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/expend3Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_radius_gray"
+                android:backgroundTint="@color/gray300"
+                android:drawableRight="@drawable/ic_open"
+                android:fontFamily="@font/nssemibold"
+                android:gravity="start|center"
+                android:padding="10dp"
+                android:text="우선 선발 기준"
+                android:textColor="#FF5C5C5C"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/expend4Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_radius_gray"
+                android:backgroundTint="@color/gray300"
+                android:drawableRight="@drawable/ic_open"
+                android:fontFamily="@font/nssemibold"
+                android:gravity="start|center"
+                android:padding="10dp"
+                android:text="지원 절차"
+                android:textColor="#FF5C5C5C"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/nssemibold"
+                android:text="※ 각 항목을 클릭하시면 자세한 내용을 보실 수 있습니다"
+                android:textColor="@color/gray900"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/nextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main"
+                android:enabled="false"
+                android:fontFamily="@font/nssemibold"
+                android:text="신청하러 가기"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
